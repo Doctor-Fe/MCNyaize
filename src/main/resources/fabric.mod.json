@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "mc_nyaize",
+	"version": "${version}",
+	"name": "MC Nyaize",
+	"description": "This mod applies the nyaize function which is alost the same as that applied in Misskey cat mode. when sending chat.",
+	"authors": [
+		"Fe_Nitride"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/Doctor-Fe/MCNyaize"
+	},
+	"license": "MIT",
+	"icon": "assets/mc_nyaize/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"fe_nitride.mc_nyaize.MCNyaizeClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
