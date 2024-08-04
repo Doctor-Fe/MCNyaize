@@ -7,6 +7,9 @@ public class ChatEvent implements ModifyChat {
 
     @Override
     public String modifySendChatMessage(String message) {
+        if (!MCNyaizeClient.isEnabled) { // 無効化されている場合は処理をしにゃい。
+            return message;
+        }
         MCNyaizeClient.LOGGER.trace("before: {}", message);
         StringBuilder new_text = new StringBuilder();
         int idx = 0;
